@@ -2,8 +2,10 @@
 
 ## Project 1: Tell me the Weather (Works!)
   A project that reads out loud the temperature of the user's desired city.<br>
-  This project uses utilizes BeautifSoup4, Google search, 
-  and Google's text-to-speech (gtts).
+  This project uses utilizes beautifulsoup4, Google search, 
+  and Google's text-to-speech (gtts).<br> The Windows Media Player will
+  launch to read out the temperature and <br>
+  it will close automatically.
 
 #### Requirements: 
   OS: Windows
