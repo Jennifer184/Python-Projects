@@ -24,7 +24,7 @@ def save_script(str):
 def play(mp3):
     try:
         PID = subprocess.Popen(mp3, shell=True).pid
-        time.sleep(7)
+        time.sleep(8)
         taskKillExitCode = subprocess.call('TASKKILL /F /IM  wmplayer.exe /T >nul', shell=True)
     except Exception:
         print ("text_to_talk.py Failed to close Windows Media Player," 
