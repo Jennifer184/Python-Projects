@@ -1,12 +1,15 @@
 # tell_me_the_weather.py 
-#   - A script that displays via command line 
+#   - Main entry point to WeatherApp.
+#     This program reads the weather out loud.
+#     A script that displays via command line 
 #     and reads out loud the current temperature of a 
 #     city that the user specifies. This uses 
 #     google search and google text to speach.
 
 # Requirements: 
 #   OS: Windows
-#   pip install BeautifSoup4
+#   pip install BeautifulSoup4
+#   pip install gtts
 
 # To Run:
 #   Use Windows PowerShell
@@ -17,6 +20,7 @@ import google_search
 import text_to_talk
 import current_time
 import weather_map
+import subprocess
 
 def find_users_city():
     city = input('Enter the name of the city and country'

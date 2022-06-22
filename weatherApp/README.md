@@ -8,19 +8,21 @@
 #### Requirements: 
   OS: Windows
 
-	$ pip install beautifulsoup4
-    $ pip install gtts
 #### To Run:
   Use Windows PowerShell
+    
+    $ pip install .
+    $ python .\weatherApp\tell_me_the_weather.py
 
-    $ python tell_me_the_weather.py
+### To Uninstall:
+    $ pip uninstall weatherApp
 
 ![base](weather_app.jpg)
 
 #### Todo:
-  &#9744; Change mp3 front cover art to current temp map
-  &#9744; Find users geolocation
-  &#9744; GUI
+  &#9744; Change mp3 front cover art to current temp map <br>
+  &#9744; Find users geolocation <br>
+  &#9744; GUI <br>
   &#9745;
   
 
