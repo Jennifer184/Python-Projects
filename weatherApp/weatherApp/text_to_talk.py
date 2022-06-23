@@ -13,7 +13,7 @@ import time
 import subprocess
 import colorama
 
-mp3 = '.\media\current_weather.mp3'
+mp3 = '.\media\\talk_to_text.mp3'
 redFont = '\033[2;31;47m'
 resetfont = ' \033[0;0m'
 program = 'text_to_talk.py '
@@ -35,8 +35,8 @@ def remove_mp3():
         os.remove(mp3)
     except Exception:
         print(redFont + program,
-                + 'Failed to delete ' + mp3,
-                + resetfont)
+            + 'Failed to delete ' + mp3,
+            + resetfont)
 
 def close_player(pid):
     try:
@@ -53,13 +53,13 @@ def play():
         time.sleep(8)
     except Exception:
         print(redFont + program,
-            + 'Failed to play the current weather mp3',
+            + 'Failed to play ' + mp3,
             + resetfont )
         exit()
 
 # Entry point
 def speak(str):
-    print("Playing the current temperature:")
+    print("Reading out loud:")
     save_script(str)
     pid = play()
     close_player(pid)
