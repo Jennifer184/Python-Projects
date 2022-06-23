@@ -6,15 +6,18 @@
 #     city that the user specifies. This uses 
 #     google search and google text to speach.
 
-# Requirements: 
-#   OS: Windows
-#   pip install BeautifulSoup4
-#   pip install gtts
+#  Requirements: 
+#   * OS: Windows
+#   * pip version 21.2.4 or higher
+#   * python 3.9 or higher
 
 # To Run:
 #   Use Windows PowerShell
-#   $ python tell_me_the_weather.py
-
+#     $ git clone git@github.com:Jennifer184/Python-Projects.git
+#     $ // cd into the weatherApp directory
+#     $ pip install .
+#     $ python weatherApp
+    
 import re
 import subprocess
 from weatherApp.google_search import googleSearch
@@ -67,11 +70,9 @@ def search_city_temp(html):
   
 def main():
     print('~ Weather Lookup ~ ')
-    
     html = search_for_city()
     result = search_city_temp(html)
     #weather_map.get_weather_map()
-    
     print(result)
     speak(result)
     
