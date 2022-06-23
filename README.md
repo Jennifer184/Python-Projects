@@ -1,6 +1,4 @@
-# Python-Projects
-
-## Project 1: Tell me the Weather (Works!)
+# Read Me the Weather
   This project reads out loud the temperature of the user's desired city. <br>
   The user's temperature will be displayed in the command line, <br>
   launch the Windows Media Player to read out the temperature, and it <br>
