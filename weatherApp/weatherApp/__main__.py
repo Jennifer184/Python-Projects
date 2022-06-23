@@ -1,4 +1,4 @@
-# tell_me_the_weather.py 
+# __main__.py 
 #   - Main entry point to WeatherApp.
 #     This program reads the weather out loud.
 #     A script that displays via command line 
@@ -16,11 +16,9 @@
 #   $ python tell_me_the_weather.py
 
 import re
-import google_search
-import text_to_talk
-import current_time
-import weather_map
 import subprocess
+from weatherApp.google_search import googleSearch
+from weatherApp.text_to_talk import speak
 
 def find_users_city():
     city = input('Enter the name of the city and country'
@@ -57,7 +55,7 @@ def capitalize_first_letter(city):
 def search_for_city():
     usersCity = find_users_city()
     search = 'weather in ' + usersCity
-    html = google_search.googleSearch(search)
+    html = googleSearch(search)
     return html
 
 def search_city_temp(html):
@@ -75,7 +73,7 @@ def main():
     #weather_map.get_weather_map()
     
     print(result)
-    text_to_talk.speak(result)
+    speak(result)
     
 if __name__ == '__main__':
     main()
