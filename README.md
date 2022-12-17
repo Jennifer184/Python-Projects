@@ -1,4 +1,5 @@
 # Read Me the Weather
+<img src="weatherApp/media/weather_app.jpg"  width=30% height=30%>
   This project reads out loud the temperature of the user's desired city. <br>
   The user's temperature will be displayed in the command line, <br>
   launch the Windows Media Player to read out the temperature, and it <br>
@@ -22,8 +23,6 @@
 	$ pip uninstall weatherApp
 	$ pip uninstall beautifulsoup4
 	$ pip uninstall gtts
-	
-![base](./weatherApp/media/weather_app.jpg)
 
 #### Todo:
   &#9745; Automate module installation <br>
